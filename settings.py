@@ -1,0 +1,3 @@
+WINDOW_CAPTION = "ninja game"
+SCREEN_SIZE = (640, 480)
+FPS = 60
