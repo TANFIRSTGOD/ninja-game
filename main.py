@@ -1,5 +1,6 @@
 import sys
 import pygame
+import random
 from settings import *
 
 class Game:
@@ -10,8 +11,11 @@ class Game:
         pygame.display.set_caption(WINDOW_CAPTION)
         self.screen = pygame.display.set_mode(SCREEN_SIZE)
         self.clock = pygame.time.Clock()
+
         self.img = pygame.image.load("data/images/clouds/cloud_1.png")
+        self.img.set_colorkey((0, 0, 0))
         self.img_pos = [160, 260]
+
         self.movement = [False, False]
 
     def run(self):
